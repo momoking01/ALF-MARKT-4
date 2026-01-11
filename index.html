@@ -227,7 +227,7 @@
             <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
             <div class="label">
               <strong>Facebook</strong>
-              <span>Unsere Seite</span>
+              <span></span>
             </div>
           </div>
           <i class="fa-solid fa-chevron-right chev"></i>
@@ -238,7 +238,7 @@
             <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
             <div class="label">
               <strong>TikTok</strong>
-              <span>Videos & Angebote</span>
+              <span></span>
             </div>
           </div>
           <i class="fa-solid fa-chevron-right chev"></i>
@@ -249,7 +249,7 @@
             <div class="icon"><i class="fa-brands fa-instagram"></i></div>
             <div class="label">
               <strong>Instagram</strong>
-              <span>Neuigkeiten & Bilder</span>
+              <span></span>
             </div>
           </div>
           <i class="fa-solid fa-chevron-right chev"></i>
@@ -260,11 +260,21 @@
             <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div class="label">
               <strong>WhatsApp</strong>
-              <span>Schnell schreiben</span>
+              <span></span>
             </div>
           </div>
           <i class="fa-solid fa-chevron-right chev"></i>
         </a>
+      <a class="btn" id="mapsBtn" href="#" target="_blank" rel="noopener">
+        <div class="left">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="label">
+            <strong>Google Maps</strong>
+            <span>&nbsp;</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right chev"></i>
+      </a>
       </div>
 
       <div class="foot">
@@ -299,12 +309,12 @@
     // CONFIG – HIER ÄNDERN
     // =========================
     const CONFIG = {
-      shopName: "Alf Market 3", // <- Name
-      shopText: "Arabisches Brot • Gemüse • Obst • Gewürze – folge uns oder schreib uns direkt.",
+      shopName: "Alf Market 4", // <- Name
+      shopText: "Internationales Lebensmittelgeschäft",
 
-      facebookUrl: "https://www.facebook.com/DEINPAGE",
-      tiktokUrl: "https://www.tiktok.com/@DEINNAME",
-      instagramUrl: "https://www.instagram.com/DEINNAME/",
+      facebookUrl: "https://www.facebook.com/profile.php?id=61586101633206",
+      tiktokUrl: "https://www.tiktok.com/@alfmarkt4",
+      instagramUrl: "https://www.instagram.com/alfMarkt4",
 
       // WhatsApp: deutsche Nummer im internationalen Format OHNE + (z.B. 4917612345678)
       whatsappNumber: "4917612345678",
@@ -313,7 +323,9 @@
       whatsappText: "Hallo! Ich habe eine Frage zu euren Produkten.",
 
       // WICHTIG: Hier kommt später die echte URL rein, nachdem du die Seite veröffentlicht hast
-      pageUrl: "https://momoking01.github.io/ALF-MARKET-3/"
+      pageUrl: "https://momoking01.github.io/ALF-MARKET-4/"
+
+      googleMapsUrl: "HIER_DEIN_MAPS_LINK",
     };
 
     // =========================
@@ -332,6 +344,8 @@
     document.getElementById("tiktokBtn").href = CONFIG.tiktokUrl;
     document.getElementById("instagramBtn").href = CONFIG.instagramUrl;
     document.getElementById("whatsappBtn").href = waLink;
+    document.getElementById("mapsBtn").href = CONFIG.googleMapsUrl;
+
 
     // =========================
     // QR Code
